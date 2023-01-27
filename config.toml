@@ -2,7 +2,8 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-theme = 'ananke'
+#theme = 'ananke'
+theme = 'terminal'
 
 [taxonomies]
   category = 'categories'

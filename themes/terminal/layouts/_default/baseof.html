@@ -13,16 +13,6 @@
 
   {{ partial "header.html" . }}
 
-  <!-- Search input -->
-  <div id="search" style="margin-left: 10px;margin-top: 20px;">
-    <input id="searchInput" tabindex="0">
-    <button id="searchButton">Search</button>
-    <ul id="searchResults">
-    </ul>
-  </div>
-  <script src="/js/fuse.js"></script> <!-- download and copy over fuse.js file from fusejs.io -->
-  <script src="/js/search.js"></script>
-
   <div class="content">
     {{ block "main" . }}
     {{ end }}
