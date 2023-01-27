@@ -1,6 +1,6 @@
 ---
 title: "First"
-date: 2023-01-26T23:01:41+01:00
+date: 2023-01-26
 draft: true
 tags:
 - 'post'
