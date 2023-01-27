@@ -10,3 +10,6 @@ theme = 'ananke'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[params]
+  searchHidenTime = 5
