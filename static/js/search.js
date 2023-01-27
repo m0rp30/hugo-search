@@ -15,7 +15,7 @@ const options = {
 };
 const hidenTime = 5000; // Tempo di attesa prima che i risultati mostrati spariscano
 const n = 5; // Numero massimo di risultati da mostrare
-const contentLenght = 25; // Lunghezza del contenuto dei post riportati dalla ricerca
+const contentLenght = 30; // Lunghezza del contenuto dei post riportati dalla ricerca
 
 // Elementi del DOM
 const searchInput = document.getElementById("searchInput"); // Campo di input per la query di ricerca
