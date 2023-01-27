@@ -28,6 +28,14 @@ Nel file di configurazione di hugo `config.toml` va aggiunto come tipo di file d
   home = ["HTML", "RSS", "JSON"]
 ```
 
+io ho anche esplicitato le tassionomie, anche se sono quelle di default, che devono esserci e che il motore di ricerca usa
+
+```toml
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+```
+
 In questo semplice esempio ho voluto inserire la barra di ricerca in ogni pagina quindi ho creato il file `layouts/_default/baseof.html`
 che, nella generazione del sito, va a sovrascrivere queelo originale del tema, piu' nello specifico ho inserito le righe dalla linea 17 alla 24
 
