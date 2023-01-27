@@ -13,8 +13,9 @@ const options = {
         'categories'
         ]
 };
-const hidenTime = 5000 // Tempo di attesa prima che i risultati mostrati spariscano
-const n = 5 // Numero massimo di risultati da mostrare
+const hidenTime = 5000; // Tempo di attesa prima che i risultati mostrati spariscano
+const n = 5; // Numero massimo di risultati da mostrare
+const contentLenght = 25; // Lunghezza del contenuto dei post riportati dalla ricerca
 
 // Elementi del DOM
 const searchInput = document.getElementById("searchInput"); // Campo di input per la query di ricerca
@@ -60,7 +61,7 @@ function executeSearch() {
 		for (let i in results.slice(0, n)) {
 		    let result = results[i].item // Variabile di appoggio del singolo risultato
 		    // Concatena i risultati elaborati nella variabile seachItems
-		    searchItems = searchItems + '<li><a href="' + result.permalink + '" tabindex="0">' + '<span class="title">' + result.title + '</span><br /> <span class="sc">'+ result.tags +'</span> — ' + result.date + ' — <em>' + result.contents + '</em></a></li>';
+		    searchItems = searchItems + '<li><a href="' + result.permalink + '" tabindex="0">' + '<span class="title">' + result.title + '</span><br /> <span class="sc">'+ result.tags +'</span> — ' + result.date + ' — <em>' + result.contents.slice(0, contentLenght) + '</em></a></li>';
 		}
 	    } else { // Se non ci sono risultati
 		searchitems = "<p>No matches found</p>";
