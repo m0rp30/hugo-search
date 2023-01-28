@@ -16,7 +16,7 @@ const options = {
 const hidenTime = 15000; // Tempo di attesa prima che i risultati mostrati spariscano
 const n = 5; // Numero massimo di risultati da mostrare
 const contentLenght = 50; // Lunghezza del contenuto dei post riportati dalla ricerca
-const fileJSON = '/index.json'; // JSON da cui raccogliere i dati, va inserto il percorso completo escluso il baseurl (es. https://www.miosito.it/sito/index.json => /sito/index.json )
+const fileJSON = 'index.json'; // JSON da cui raccogliere i dati, va inserto il percorso completo escluso il baseurl (es. https://www.miosito.it/sito/index.json => /sito/index.json )
 
 // Elementi del DOM
 const searchInput = document.getElementById("searchInput"); // Campo di input per la query di ricerca
