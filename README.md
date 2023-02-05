@@ -37,7 +37,7 @@ io ho anche esplicitato le tassionomie, anche se sono quelle di default, che dev
 ```
 
 In questo semplice esempio ho voluto inserire la barra di ricerca in ogni pagina quindi ho creato il file `layouts/_default/baseof.html`
-che, nella generazione del sito, va a sovrascrivere queelo originale del tema, piu' nello specifico ho inserito le righe dalla linea 17 alla 24
+che, nella generazione del sito, va a sovrascrivere quelo originale del tema, piu' nello specifico ho inserito le righe dalla linea 17 alla 24
 
 ```html
   <!-- Search input -->
