@@ -12,7 +12,9 @@
 <div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default true) " headings--one-size" "" }}">
 
   {{ partial "header.html" . }}
-
+  
+  <!-- Show search bar only at home page -->
+  {{ if .IsHome }}
   <!-- Search input -->
   <div id="search" style="margin-left: 10px;margin-top: 20px;">
     <input id="searchInput" tabindex="0">
@@ -22,6 +24,7 @@
   </div>
   <script src="js/fuse.js"></script> <!-- download and copy over fuse.js file from fusejs.io -->
   <script src="js/search.js"></script>
+  {{ end }}
 
   <div class="content">
     {{ block "main" . }}
